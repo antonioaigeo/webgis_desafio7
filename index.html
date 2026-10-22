@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title id="page-title">Quem é Mais Vulnerável no Território? — Dourados/MS</title>
+<meta name="description" content="Mapa integrado de risco e vulnerabilidade social para o município de Dourados/MS. Combina suscetibilidade física (modelo HAND, mapeamento de enxurradas intra...">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Quem é Mais Vulnerável no Território? — Dourados/MS">
+<meta property="og:description" content="Mapa integrado de risco e vulnerabilidade social para o município de Dourados/MS. Combina suscetibilidade física (modelo HAND, mapeamento de enxurradas intra...">
+<meta property="og:image" content="assets/favicon.png">
+<meta name="twitter:card" content="summary">
+<link rel="icon" href="assets/favicon.png">
+<link rel="stylesheet" href="leaflet/leaflet.css">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<header id="app-header">
+  <div id="header-left">
+    <img id="site-logo" src="" alt="logo" style="display:none">
+    <div>
+      <h1 id="site-title">WebGIS</h1>
+      <p id="site-subtitle"></p>
+    </div>
+  </div>
+  <div id="header-right">
+    <button id="btn-about" class="btn-ghost" type="button">Sobre</button>
+    <button id="btn-layers" class="btn-ghost btn-mobile-only" type="button">Camadas</button>
+  </div>
+</header>
+
+<div id="app-body">
+  <aside id="sidebar">
+    <div class="sidebar-section">
+      <h2>Camadas</h2>
+      <div id="layer-list"></div>
+    </div>
+    <div class="sidebar-section">
+      <h2>Base</h2>
+      <select id="basemap-select">
+        <option value="osm">OpenStreetMap</option>
+        <option value="carto_light">Claro (Carto)</option>
+        <option value="esri_sat">Satélite (Esri)</option>
+      </select>
+    </div>
+    <div class="sidebar-section" id="legend-section">
+      <h2>Legenda</h2>
+      <div id="legend-content"><p class="muted">Ative uma camada para ver a legenda.</p></div>
+    </div>
+  </aside>
+
+  <main id="map-wrap">
+    <div id="map"></div>
+  </main>
+</div>
+
+<footer id="app-footer"></footer>
+
+<div id="about-modal" class="modal-overlay">
+  <div class="modal">
+    <button class="modal-close" id="about-close" type="button">&times;</button>
+    <h2 id="about-title-modal">Sobre este mapa</h2>
+    <div id="about-text"></div>
+    <h3>Autoria</h3>
+    <div id="authors-text"></div>
+    <div id="about-contacts"></div>
+    <p class="muted small">Gerado com WebGIS Exporter (plugin QGIS).</p>
+  </div>
+</div>
+
+<div id="feature-popup-root"></div>
+
+<script src="leaflet/leaflet.js"></script>
+<script src="assets/app.js"></script>
+</body>
+</html>

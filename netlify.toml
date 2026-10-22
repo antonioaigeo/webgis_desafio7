@@ -1,0 +1,13 @@
+[build]
+  publish = "."
+
+[[headers]]
+  for = "/*.geojson"
+  [headers.values]
+    Content-Type = "application/geo+json"
+
+[[headers]]
+  for = "/*.geojson.gz"
+  [headers.values]
+    Content-Encoding = "gzip"
+    Content-Type = "application/geo+json"

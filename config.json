@@ -1,0 +1,1521 @@
+{
+  "title": "Quem é Mais Vulnerável no Território? — Dourados/MS",
+  "subtitle": "Desafio 7 — Vulnerabilidade Social, Território e Justiça Climática",
+  "logo": null,
+  "about": "Mapa integrado de risco e vulnerabilidade social para o município de Dourados/MS. Combina suscetibilidade física (modelo HAND, mapeamento de enxurradas intraurbanas) com o Índice de Vulnerabilidade Social (SoVI), permitindo identificar não apenas onde ocorrem eventos hidrológicos, mas quem vive nessas áreas e quais capacidades têm para se proteger.",
+  "authors": "Antonio Iderlian Pereira de Sousa — Ação de Extensão / Doutorado",
+  "basemap": "osm",
+  "initialCenter": null,
+  "initialZoom": null,
+  "initialBounds": [
+    [
+      -22.274654150065977,
+      -55.00401162980517
+    ],
+    [
+      -22.172625651195727,
+      -54.83259225468053
+    ]
+  ],
+  "generatedAt": "2026-10-22T15:39:12",
+  "extraBasemaps": [
+    {
+      "id": "l_Google_Satellite_804e3c4d_e808_4e5e_8dca",
+      "name": "Google Satellite",
+      "url": "https://mt1.google.com/vt/lyrs=s&x={x}&y={y}&z={z}",
+      "minZoom": 0,
+      "maxZoom": 20
+    },
+    {
+      "id": "l_OSM_Standard_5955ccb1_6dda_4a39_a201_e52",
+      "name": "OSM Standard",
+      "url": "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+      "minZoom": 0,
+      "maxZoom": 19
+    }
+  ],
+  "email": "antonioiderlianpereiradesousa@gmail.com",
+  "links": [],
+  "layers": [
+    {
+      "id": "l_Alagamentos_c4d20ed7_e362_451f_8de5_c1c2",
+      "name": "Ocorrências registradas (eventos hidrológicos 2011-2026)",
+      "type": "vector",
+      "visibleByDefault": true,
+      "legend": [
+        {
+          "label": "Alagamento",
+          "color": "#d7191c",
+          "strokeColor": "#232323",
+          "fillOpacity": 1.0,
+          "shape": "point"
+        },
+        {
+          "label": "Enchente?",
+          "color": "#ffffbf",
+          "strokeColor": "#232323",
+          "fillOpacity": 1.0,
+          "shape": "point"
+        },
+        {
+          "label": "Enxurrada",
+          "color": "#2b83ba",
+          "strokeColor": "#232323",
+          "fillOpacity": 1.0,
+          "shape": "point"
+        }
+      ],
+      "legendKind": "categorized",
+      "bounds": [
+        [
+          -22.296998917446647,
+          -54.855036507092294
+        ],
+        [
+          -22.182266074685312,
+          -54.70034877079401
+        ]
+      ],
+      "order": 0,
+      "group": "Ocorrências e Defesa Civil",
+      "geomType": "point",
+      "kind": "categorized",
+      "field": "tipo",
+      "default": null,
+      "classes": [
+        {
+          "value": "Alagamento",
+          "label": "Alagamento",
+          "style": {
+            "fillColor": "#d7191c",
+            "fillOpacity": 1.0,
+            "color": "#232323",
+            "opacity": 1.0,
+            "weight": 1.5,
+            "radius": 4.0
+          }
+        },
+        {
+          "value": "Enchente?",
+          "label": "Enchente?",
+          "style": {
+            "fillColor": "#ffffbf",
+            "fillOpacity": 1.0,
+            "color": "#232323",
+            "opacity": 1.0,
+            "weight": 1.5,
+            "radius": 4.0
+          }
+        },
+        {
+          "value": "Enxurrada",
+          "label": "Enxurrada",
+          "style": {
+            "fillColor": "#2b83ba",
+            "fillOpacity": 1.0,
+            "color": "#232323",
+            "opacity": 1.0,
+            "weight": 1.5,
+            "radius": 4.0
+          }
+        }
+      ],
+      "data": "data/l_Alagamentos_c4d20ed7_e362_451f_8de5_c1c2.geojson",
+      "featureCount": 216
+    },
+    {
+      "id": "l_Alagamentos_c595970a_767a_4f21_b031_9f54",
+      "name": "Alagamentos",
+      "type": "vector",
+      "visibleByDefault": false,
+      "legend": [
+        {
+          "label": "Alagamentos",
+          "color": "#29d2e5",
+          "strokeColor": "#ffffff",
+          "fillOpacity": 1.0,
+          "shape": "point"
+        }
+      ],
+      "legendKind": "single",
+      "bounds": [
+        [
+          -22.296998917446647,
+          -54.855036507092294
+        ],
+        [
+          -22.182266074685312,
+          -54.70034877079401
+        ]
+      ],
+      "order": 1,
+      "group": "Ocorrências e Defesa Civil",
+      "geomType": "point",
+      "kind": "single",
+      "field": null,
+      "default": {
+        "fillColor": "#29d2e5",
+        "fillOpacity": 1.0,
+        "color": "#ffffff",
+        "opacity": 1.0,
+        "weight": 0.4,
+        "radius": 3.2
+      },
+      "classes": [],
+      "data": "data/l_Alagamentos_c595970a_767a_4f21_b031_9f54.geojson",
+      "featureCount": 216
+    },
+    {
+      "id": "l_CURSO_DE_AGUA_SIRGAS_2000_1_a0c54166_8db",
+      "name": "CURSO_DE_AGUA_SIRGAS_2000_1",
+      "type": "vector",
+      "visibleByDefault": false,
+      "legend": [
+        {
+          "label": "CURSO_DE_AGUA_SIRGAS_2000_1",
+          "color": "#000000",
+          "strokeColor": "#000000",
+          "fillOpacity": 1.0,
+          "shape": "line"
+        }
+      ],
+      "legendKind": "single",
+      "bounds": [
+        [
+          -24.07875880146771,
+          -58.17024503797559
+        ],
+        [
+          -17.0002433708317,
+          -50.50049361035015
+        ]
+      ],
+      "order": 4,
+      "group": "Geografia Física e Hidrografia",
+      "geomType": "line",
+      "kind": "single",
+      "field": null,
+      "default": {
+        "fillColor": "#1173c9",
+        "fillOpacity": 1.0,
+        "color": "#000000",
+        "opacity": 1.0,
+        "weight": 0.66,
+        "radius": 6
+      },
+      "classes": [],
+      "data": "data/l_CURSO_DE_AGUA_SIRGAS_2000_1_a0c54166_8db.geojson",
+      "featureCount": 96248
+    },
+    {
+      "id": "l_HAND_Vetorial_Final__5_Classes__963dc21d",
+      "name": "Áreas de suscetíbilidade a enchente e/ou inundação",
+      "type": "vector",
+      "visibleByDefault": true,
+      "legend": [
+        {
+          "label": "1 - Muito Alta Suscetibilidade (0 a 2 m)",
+          "color": "#1a5276",
+          "strokeColor": "#232323",
+          "fillOpacity": 0.75,
+          "shape": "polygon"
+        },
+        {
+          "label": "2 - Alta Suscetibilidade (2 a 5 m)",
+          "color": "#5dade2",
+          "strokeColor": "#232323",
+          "fillOpacity": 0.75,
+          "shape": "polygon"
+        },
+        {
+          "label": "3 - Média Suscetibilidade (5 a 12 m)",
+          "color": "#f9e79f",
+          "strokeColor": "#232323",
+          "fillOpacity": 0.75,
+          "shape": "polygon"
+        },
+        {
+          "label": "4 - Baixa Suscetibilidade (12 a 25 m)",
+          "color": "#eb984e",
+          "strokeColor": "#232323",
+          "fillOpacity": 0.75,
+          "shape": "polygon"
+        },
+        {
+          "label": "5 - Muito Baixa Suscetibilidade (> 25 m)",
+          "color": "#784212",
+          "strokeColor": "#232323",
+          "fillOpacity": 0.75,
+          "shape": "polygon"
+        }
+      ],
+      "legendKind": "categorized",
+      "bounds": [
+        [
+          -22.317123849796122,
+          -54.89835686217702
+        ],
+        [
+          -22.17157140604847,
+          -54.681591974874536
+        ]
+      ],
+      "order": 6,
+      "group": "Suscetibilidade e Risco Físico",
+      "geomType": "polygon",
+      "kind": "categorized",
+      "field": "classe_id",
+      "default": null,
+      "classes": [
+        {
+          "value": 1,
+          "label": "1 - Muito Alta Suscetibilidade (0 a 2 m)",
+          "style": {
+            "fillColor": "#1a5276",
+            "fillOpacity": 0.75,
+            "color": "#232323",
+            "opacity": 0.75,
+            "weight": 0.26,
+            "radius": 6
+          }
+        },
+        {
+          "value": 2,
+          "label": "2 - Alta Suscetibilidade (2 a 5 m)",
+          "style": {
+            "fillColor": "#5dade2",
+            "fillOpacity": 0.75,
+            "color": "#232323",
+            "opacity": 0.75,
+            "weight": 0.26,
+            "radius": 6
+          }
+        },
+        {
+          "value": 3,
+          "label": "3 - Média Suscetibilidade (5 a 12 m)",
+          "style": {
+            "fillColor": "#f9e79f",
+            "fillOpacity": 0.75,
+            "color": "#232323",
+            "opacity": 0.75,
+            "weight": 0.26,
+            "radius": 6
+          }
+        },
+        {
+          "value": 4,
+          "label": "4 - Baixa Suscetibilidade (12 a 25 m)",
+          "style": {
+            "fillColor": "#eb984e",
+            "fillOpacity": 0.75,
+            "color": "#232323",
+            "opacity": 0.75,
+            "weight": 0.26,
+            "radius": 6
+          }
+        },
+        {
+          "value": 5,
+          "label": "5 - Muito Baixa Suscetibilidade (> 25 m)",
+          "style": {
+            "fillColor": "#784212",
+            "fillOpacity": 0.75,
+            "color": "#232323",
+            "opacity": 0.75,
+            "weight": 0.26,
+            "radius": 6
+          }
+        }
+      ],
+      "data": "data/l_HAND_Vetorial_Final__5_Classes__963dc21d.geojson",
+      "featureCount": 2588
+    },
+    {
+      "id": "l_Interse__o___enxurradas_f1ef3383_2e77_42",
+      "name": "Áreas de risco de enxurradas",
+      "type": "vector",
+      "visibleByDefault": true,
+      "legend": [
+        {
+          "label": "1 - Baixa Tendência (< 15 m de desnível)",
+          "color": "#40da6e",
+          "strokeColor": "#232323",
+          "fillOpacity": 1.0,
+          "shape": "polygon"
+        },
+        {
+          "label": "2 - Média Tendência (15 a 25 m de desnível)",
+          "color": "#f1c40f",
+          "strokeColor": "#232323",
+          "fillOpacity": 1.0,
+          "shape": "polygon"
+        },
+        {
+          "label": "3 - Alta Tendência (>= 25 m de desnível - Perfil Íngreme)",
+          "color": "#c0392b",
+          "strokeColor": "#232323",
+          "fillOpacity": 1.0,
+          "shape": "polygon"
+        }
+      ],
+      "legendKind": "categorized",
+      "bounds": [
+        [
+          -22.316412107570162,
+          -54.87152933591596
+        ],
+        [
+          -22.172957825785005,
+          -54.72885005690017
+        ]
+      ],
+      "order": 7,
+      "group": "Suscetibilidade e Risco Físico",
+      "geomType": "polygon",
+      "kind": "categorized",
+      "field": "classe_rotulo",
+      "default": null,
+      "classes": [
+        {
+          "value": "1 - Baixa Tendência (< 15 m de desnível)",
+          "label": "1 - Baixa Tendência (< 15 m de desnível)",
+          "style": {
+            "fillColor": "#40da6e",
+            "fillOpacity": 1.0,
+            "color": "#232323",
+            "opacity": 1.0,
+            "weight": 1.5,
+            "radius": 6
+          }
+        },
+        {
+          "value": "2 - Média Tendência (15 a 25 m de desnível)",
+          "label": "2 - Média Tendência (15 a 25 m de desnível)",
+          "style": {
+            "fillColor": "#f1c40f",
+            "fillOpacity": 1.0,
+            "color": "#232323",
+            "opacity": 1.0,
+            "weight": 1.5,
+            "radius": 6
+          }
+        },
+        {
+          "value": "3 - Alta Tendência (>= 25 m de desnível - Perfil Íngreme)",
+          "label": "3 - Alta Tendência (>= 25 m de desnível - Perfil Íngreme)",
+          "style": {
+            "fillColor": "#c0392b",
+            "fillOpacity": 1.0,
+            "color": "#232323",
+            "opacity": 1.0,
+            "weight": 1.5,
+            "radius": 6
+          }
+        }
+      ],
+      "data": "data/l_Interse__o___enxurradas_f1ef3383_2e77_42.geojson",
+      "featureCount": 3431
+    },
+    {
+      "id": "l_Postos_de_Combust_vel_UTM___postos_de_co",
+      "name": "Postos de Combustível-UTM — postos_de_combustivel",
+      "type": "vector",
+      "visibleByDefault": false,
+      "legend": [
+        {
+          "label": "Postos de Combustível-UTM — postos_de_combustivel",
+          "color": "#e8e8e8",
+          "strokeColor": "#232323",
+          "fillOpacity": 1.0,
+          "shape": "point"
+        }
+      ],
+      "legendKind": "single",
+      "bounds": [
+        [
+          -22.372167926786606,
+          -54.92727524974047
+        ],
+        [
+          -22.1141,
+          -54.690423642972554
+        ]
+      ],
+      "order": 9,
+      "group": "Infraestrutura e Risco Tecnológico",
+      "geomType": "point",
+      "kind": "single",
+      "field": null,
+      "default": {
+        "fillColor": "#e8e8e8",
+        "fillOpacity": 1.0,
+        "color": "#232323",
+        "opacity": 1.0,
+        "weight": 1.5,
+        "radius": 4.0
+      },
+      "classes": [],
+      "data": "data/l_Postos_de_Combust_vel_UTM___postos_de_co.geojson",
+      "featureCount": 47
+    },
+    {
+      "id": "l_SoVI_Setores_Censitarios_2022_5a745d45_3",
+      "name": "Índice de Vulnerabilidade Social",
+      "type": "vector",
+      "visibleByDefault": true,
+      "legend": [
+        {
+          "label": "Muito Baixa (< -0.50 s)",
+          "color": "#2b83ba",
+          "strokeColor": "#4d4d4d",
+          "fillOpacity": 1.0,
+          "shape": "polygon"
+        },
+        {
+          "label": "Baixa (-0.50 a 0.00 s)",
+          "color": "#abdda4",
+          "strokeColor": "#4d4d4d",
+          "fillOpacity": 1.0,
+          "shape": "polygon"
+        },
+        {
+          "label": "Média-Alta (0.00 a +0.50 s)",
+          "color": "#fdae61",
+          "strokeColor": "#4d4d4d",
+          "fillOpacity": 1.0,
+          "shape": "polygon"
+        },
+        {
+          "label": "Alta (> +0.50 s)",
+          "color": "#d7191c",
+          "strokeColor": "#4d4d4d",
+          "fillOpacity": 1.0,
+          "shape": "polygon"
+        }
+      ],
+      "legendKind": "graduated",
+      "bounds": [
+        [
+          -22.32269668579102,
+          -54.88459396362305
+        ],
+        [
+          -22.14592170715332,
+          -54.72522354125977
+        ]
+      ],
+      "order": 10,
+      "group": "Vulnerabilidade Social (SoVI)",
+      "geomType": "polygon",
+      "kind": "graduated",
+      "field": "SOVI_ZSCORE",
+      "default": null,
+      "classes": [
+        {
+          "min": -99.0,
+          "max": -0.5,
+          "label": "Muito Baixa (< -0.50 s)",
+          "style": {
+            "fillColor": "#2b83ba",
+            "fillOpacity": 1.0,
+            "color": "#4d4d4d",
+            "opacity": 1.0,
+            "weight": 0.12,
+            "radius": 6
+          }
+        },
+        {
+          "min": -0.5,
+          "max": 0.0,
+          "label": "Baixa (-0.50 a 0.00 s)",
+          "style": {
+            "fillColor": "#abdda4",
+            "fillOpacity": 1.0,
+            "color": "#4d4d4d",
+            "opacity": 1.0,
+            "weight": 0.12,
+            "radius": 6
+          }
+        },
+        {
+          "min": 0.0,
+          "max": 0.5,
+          "label": "Média-Alta (0.00 a +0.50 s)",
+          "style": {
+            "fillColor": "#fdae61",
+            "fillOpacity": 1.0,
+            "color": "#4d4d4d",
+            "opacity": 1.0,
+            "weight": 0.12,
+            "radius": 6
+          }
+        },
+        {
+          "min": 0.5,
+          "max": 99.0,
+          "label": "Alta (> +0.50 s)",
+          "style": {
+            "fillColor": "#d7191c",
+            "fillOpacity": 1.0,
+            "color": "#4d4d4d",
+            "opacity": 1.0,
+            "weight": 0.12,
+            "radius": 6
+          }
+        }
+      ],
+      "data": "data/l_SoVI_Setores_Censitarios_2022_5a745d45_3.geojson",
+      "featureCount": 458
+    },
+    {
+      "id": "l__rea_de_Risco_do_Vale__Recortada__fdbb90",
+      "name": "Área de Risco do Vale (Recortada)",
+      "type": "vector",
+      "visibleByDefault": true,
+      "legend": [
+        {
+          "label": "Área de Risco do Vale (Recortada)",
+          "color": "#9400d3",
+          "strokeColor": "#000000",
+          "fillOpacity": 0.605,
+          "shape": "polygon"
+        }
+      ],
+      "legendKind": "single",
+      "bounds": [
+        [
+          -22.252798434898203,
+          -54.809106909239276
+        ],
+        [
+          -22.227194841740346,
+          -54.785868374500865
+        ]
+      ],
+      "order": 11,
+      "group": "Suscetibilidade e Risco Físico",
+      "geomType": "polygon",
+      "kind": "single",
+      "field": null,
+      "default": {
+        "fillColor": "#9400d3",
+        "fillOpacity": 0.605,
+        "color": "#000000",
+        "opacity": 0.605,
+        "weight": 0.26,
+        "radius": 6
+      },
+      "classes": [],
+      "data": "data/l__rea_de_Risco_do_Vale__Recortada__fdbb90.geojson",
+      "featureCount": 1
+    },
+    {
+      "id": "l_barragensshp_bc08d685_74ca_44ff_8d56_92c",
+      "name": "barragensshp",
+      "type": "vector",
+      "visibleByDefault": false,
+      "legend": [
+        {
+          "label": "barragensshp",
+          "color": "#000000",
+          "strokeColor": "#ffffff",
+          "fillOpacity": 1.0,
+          "shape": "point"
+        }
+      ],
+      "legendKind": "single",
+      "bounds": [
+        [
+          -90.0,
+          -180.0
+        ],
+        [
+          -10.50932955018736,
+          180.0
+        ]
+      ],
+      "order": 12,
+      "group": "Infraestrutura e Risco Tecnológico",
+      "geomType": "point",
+      "kind": "single",
+      "field": null,
+      "default": {
+        "fillColor": "#000000",
+        "fillOpacity": 1.0,
+        "color": "#ffffff",
+        "opacity": 1.0,
+        "weight": 0.4,
+        "radius": 6.8
+      },
+      "classes": [],
+      "data": "data/l_barragensshp_bc08d685_74ca_44ff_8d56_92c.geojson",
+      "featureCount": 31050
+    },
+    {
+      "id": "l_bordeada_5000a684_50c0_43d8_814e_6a6aae7",
+      "name": "buffer_riscotecnologico — bordeada",
+      "type": "vector",
+      "visibleByDefault": false,
+      "legend": [
+        {
+          "label": "buffer_riscotecnologico — bordeada",
+          "color": "#bd851f",
+          "strokeColor": "#232323",
+          "fillOpacity": 0.7,
+          "shape": "polygon"
+        }
+      ],
+      "legendKind": "single",
+      "bounds": [
+        [
+          -22.269605186827658,
+          -54.864449845070965
+        ],
+        [
+          -22.20223639723797,
+          -54.70247332759375
+        ]
+      ],
+      "order": 13,
+      "group": "Infraestrutura e Risco Tecnológico",
+      "geomType": "polygon",
+      "kind": "single",
+      "field": null,
+      "default": {
+        "fillColor": "#bd851f",
+        "fillOpacity": 0.7,
+        "color": "#232323",
+        "opacity": 1.0,
+        "weight": 0.26,
+        "radius": 6
+      },
+      "classes": [],
+      "data": "data/l_bordeada_5000a684_50c0_43d8_814e_6a6aae7.geojson",
+      "featureCount": 45
+    },
+    {
+      "id": "l_bueiro_5d8832fc_7a87_4648_a3a0_8983388c6",
+      "name": "Densidade de bocas de dragão e bocas de lobo",
+      "type": "vector",
+      "visibleByDefault": false,
+      "legend": [
+        {
+          "label": "Densidade de bocas de dragão e bocas de lobo",
+          "color": "#3388ff",
+          "strokeColor": "#1f6fd6",
+          "fillOpacity": 0.65,
+          "shape": "point"
+        }
+      ],
+      "legendKind": "single",
+      "bounds": [
+        [
+          -22.3105360092109,
+          -54.86573595895422
+        ],
+        [
+          -22.1159852654502,
+          -54.60974337739965
+        ]
+      ],
+      "order": 14,
+      "group": "Geografia Física e Hidrografia",
+      "geomType": "point",
+      "kind": "single",
+      "field": null,
+      "default": {
+        "fillColor": "#3388ff",
+        "fillOpacity": 0.65,
+        "color": "#1f6fd6",
+        "opacity": 1.0,
+        "weight": 1.5,
+        "radius": 6
+      },
+      "classes": [],
+      "data": "data/l_bueiro_5d8832fc_7a87_4648_a3a0_8983388c6.geojson",
+      "featureCount": 11618
+    },
+    {
+      "id": "l_dourados_hidrografia_urbana_fb1a2dbb_d0a",
+      "name": "Curso d'água",
+      "type": "vector",
+      "visibleByDefault": true,
+      "legend": [
+        {
+          "label": "Curso d'água",
+          "color": "#000000",
+          "strokeColor": "#000000",
+          "fillOpacity": 1.0,
+          "shape": "line"
+        }
+      ],
+      "legendKind": "single",
+      "bounds": [
+        [
+          -22.316968021470814,
+          -54.89266385351686
+        ],
+        [
+          -22.17314466017964,
+          -54.68345177386955
+        ]
+      ],
+      "order": 15,
+      "group": "Geografia Física e Hidrografia",
+      "geomType": "line",
+      "kind": "single",
+      "field": null,
+      "default": {
+        "fillColor": "#1e64c8",
+        "fillOpacity": 1.0,
+        "color": "#000000",
+        "opacity": 1.0,
+        "weight": 0.6,
+        "radius": 6
+      },
+      "classes": [],
+      "data": "data/l_dourados_hidrografia_urbana_fb1a2dbb_d0a.geojson",
+      "featureCount": 343
+    },
+    {
+      "id": "l_douradosbacia_hidrografica_sede_3c894fc7",
+      "name": "bacias_urbanas_dourados — douradosbacia_hidrografica_sede",
+      "type": "vector",
+      "visibleByDefault": true,
+      "legend": [
+        {
+          "label": "bacias_urbanas_dourados — douradosbacia_hidrografica_sede",
+          "color": "#000000",
+          "strokeColor": "#005aa0",
+          "fillOpacity": 0.0,
+          "shape": "polygon"
+        }
+      ],
+      "legendKind": "single",
+      "bounds": [
+        [
+          -22.31713741555509,
+          -54.89835928383539
+        ],
+        [
+          -22.171529889009655,
+          -54.68152868260947
+        ]
+      ],
+      "order": 16,
+      "group": "Limites e Referência",
+      "geomType": "polygon",
+      "kind": "single",
+      "field": null,
+      "default": {
+        "fillColor": "#000000",
+        "fillOpacity": 0.0,
+        "color": "#005aa0",
+        "opacity": 1.0,
+        "weight": 0.5,
+        "radius": 6
+      },
+      "classes": [],
+      "data": "data/l_douradosbacia_hidrografica_sede_3c894fc7.geojson",
+      "featureCount": 8
+    },
+    {
+      "id": "l_eixo_viario_8e8d3b60_ce1e_4f0c_b699_6d2e",
+      "name": "eixo_viario",
+      "type": "vector",
+      "visibleByDefault": false,
+      "legend": [
+        {
+          "label": "eixo_viario",
+          "color": "#000000",
+          "strokeColor": "#000000",
+          "fillOpacity": 1.0,
+          "shape": "line"
+        }
+      ],
+      "legendKind": "single",
+      "bounds": [
+        [
+          -22.422935465123228,
+          -55.51954076612314
+        ],
+        [
+          -21.875141742234437,
+          -54.2229637994199
+        ]
+      ],
+      "order": 17,
+      "group": "Limites e Referência",
+      "geomType": "line",
+      "kind": "single",
+      "field": null,
+      "default": {
+        "fillColor": "#7d8b8f",
+        "fillOpacity": 1.0,
+        "color": "#000000",
+        "opacity": 1.0,
+        "weight": 0.06,
+        "radius": 6
+      },
+      "classes": [],
+      "data": "data/l_eixo_viario_8e8d3b60_ce1e_4f0c_b699_6d2e.geojson",
+      "featureCount": 7448
+    },
+    {
+      "id": "l_estacoes_ana_certo__ec31a614_4038_44b3_a",
+      "name": "Estações meterológicas",
+      "type": "vector",
+      "visibleByDefault": false,
+      "legend": [
+        {
+          "label": "Estação  meterológica UFGD",
+          "color": "#8543e7",
+          "strokeColor": "#535353",
+          "fillOpacity": 1.0,
+          "shape": "point"
+        },
+        {
+          "label": "Estação meterológica ANA",
+          "color": "#4785cd",
+          "strokeColor": "#535353",
+          "fillOpacity": 1.0,
+          "shape": "point"
+        },
+        {
+          "label": "Estação meterológica EMBRAPA",
+          "color": "#e44631",
+          "strokeColor": "#535353",
+          "fillOpacity": 1.0,
+          "shape": "point"
+        },
+        {
+          "label": "Estação meterológica INMET",
+          "color": "#6cc859",
+          "strokeColor": "#535353",
+          "fillOpacity": 1.0,
+          "shape": "point"
+        },
+        {
+          "label": "Pluviometro CEMADEN",
+          "color": "#ceca63",
+          "strokeColor": "#535353",
+          "fillOpacity": 1.0,
+          "shape": "point"
+        },
+        {
+          "label": "Pluviometro CEMADEN - 2014 a 2023",
+          "color": "#55f0bf",
+          "strokeColor": "#535353",
+          "fillOpacity": 1.0,
+          "shape": "point"
+        }
+      ],
+      "legendKind": "categorized",
+      "bounds": [
+        [
+          -22.39810180664063,
+          -55.35313034057617
+        ],
+        [
+          -22.08609390258789,
+          -54.78839874267578
+        ]
+      ],
+      "order": 18,
+      "group": "Geografia Física e Hidrografia",
+      "geomType": "point",
+      "kind": "categorized",
+      "field": "Name",
+      "default": null,
+      "classes": [
+        {
+          "value": "Estação  meterológica UFGD",
+          "label": "Estação  meterológica UFGD",
+          "style": {
+            "fillColor": "#8543e7",
+            "fillOpacity": 1.0,
+            "color": "#535353",
+            "opacity": 1.0,
+            "weight": 0.4,
+            "radius": 8.0
+          }
+        },
+        {
+          "value": "Estação meterológica ANA",
+          "label": "Estação meterológica ANA",
+          "style": {
+            "fillColor": "#4785cd",
+            "fillOpacity": 1.0,
+            "color": "#535353",
+            "opacity": 1.0,
+            "weight": 0.4,
+            "radius": 8.0
+          }
+        },
+        {
+          "value": "Estação meterológica EMBRAPA",
+          "label": "Estação meterológica EMBRAPA",
+          "style": {
+            "fillColor": "#e44631",
+            "fillOpacity": 1.0,
+            "color": "#535353",
+            "opacity": 1.0,
+            "weight": 0.4,
+            "radius": 8.0
+          }
+        },
+        {
+          "value": "Estação meterológica INMET",
+          "label": "Estação meterológica INMET",
+          "style": {
+            "fillColor": "#6cc859",
+            "fillOpacity": 1.0,
+            "color": "#535353",
+            "opacity": 1.0,
+            "weight": 0.4,
+            "radius": 8.0
+          }
+        },
+        {
+          "value": "Pluviometro CEMADEN",
+          "label": "Pluviometro CEMADEN",
+          "style": {
+            "fillColor": "#ceca63",
+            "fillOpacity": 1.0,
+            "color": "#535353",
+            "opacity": 1.0,
+            "weight": 0.4,
+            "radius": 8.0
+          }
+        },
+        {
+          "value": "Pluviometro CEMADEN - 2014 a 2023",
+          "label": "Pluviometro CEMADEN - 2014 a 2023",
+          "style": {
+            "fillColor": "#55f0bf",
+            "fillOpacity": 1.0,
+            "color": "#535353",
+            "opacity": 1.0,
+            "weight": 0.4,
+            "radius": 8.0
+          }
+        }
+      ],
+      "data": "data/l_estacoes_ana_certo__ec31a614_4038_44b3_a.geojson",
+      "featureCount": 8
+    },
+    {
+      "id": "l_intesec_indundacao_SOVI2_20d739b3_789a_4",
+      "name": "Áreas de risco de enchente e/ou inundação",
+      "type": "vector",
+      "visibleByDefault": true,
+      "legend": [
+        {
+          "label": "Alto risco",
+          "color": "#d7191c",
+          "strokeColor": "#232323",
+          "fillOpacity": 0.75,
+          "shape": "polygon"
+        },
+        {
+          "label": "Médio risco",
+          "color": "#fefa1f",
+          "strokeColor": "#232323",
+          "fillOpacity": 0.75,
+          "shape": "polygon"
+        },
+        {
+          "label": "Baixo risco",
+          "color": "#c4e687",
+          "strokeColor": "#232323",
+          "fillOpacity": 0.75,
+          "shape": "polygon"
+        }
+      ],
+      "legendKind": "categorized",
+      "bounds": [
+        [
+          -22.315588002101812,
+          -54.87150077861543
+        ],
+        [
+          -22.174113472027592,
+          -54.730237999999986
+        ]
+      ],
+      "order": 19,
+      "group": "Risco Integrado (Físico × SoVI)",
+      "geomType": "polygon",
+      "kind": "categorized",
+      "field": "classe_id",
+      "default": null,
+      "classes": [
+        {
+          "value": 1,
+          "label": "Alto risco",
+          "style": {
+            "fillColor": "#d7191c",
+            "fillOpacity": 0.75,
+            "color": "#232323",
+            "opacity": 0.75,
+            "weight": 0.26,
+            "radius": 6
+          }
+        },
+        {
+          "value": 2,
+          "label": "Médio risco",
+          "style": {
+            "fillColor": "#fefa1f",
+            "fillOpacity": 0.75,
+            "color": "#232323",
+            "opacity": 0.75,
+            "weight": 0.26,
+            "radius": 6
+          }
+        },
+        {
+          "value": [
+            3,
+            4,
+            5
+          ],
+          "label": "Baixo risco",
+          "style": {
+            "fillColor": "#c4e687",
+            "fillOpacity": 0.75,
+            "color": "#232323",
+            "opacity": 0.75,
+            "weight": 0.26,
+            "radius": 6
+          }
+        }
+      ],
+      "data": "data/l_intesec_indundacao_SOVI2_20d739b3_789a_4.geojson",
+      "featureCount": 1517
+    },
+    {
+      "id": "l_lagos_lagos_dentroBacia_69f30b46_0eea_4d",
+      "name": "lagos-lagos_dentroBacia",
+      "type": "vector",
+      "visibleByDefault": false,
+      "legend": [
+        {
+          "label": "lagos-lagos_dentroBacia",
+          "color": "#18b7df",
+          "strokeColor": "#1d5ad5",
+          "fillOpacity": 1.0,
+          "shape": "polygon"
+        }
+      ],
+      "legendKind": "single",
+      "bounds": [
+        [
+          -22.213785535127975,
+          -54.75408776656934
+        ],
+        [
+          -22.179298364026,
+          -54.72659204364309
+        ]
+      ],
+      "order": 20,
+      "group": "Geografia Física e Hidrografia",
+      "geomType": "polygon",
+      "kind": "single",
+      "field": null,
+      "default": {
+        "fillColor": "#18b7df",
+        "fillOpacity": 1.0,
+        "color": "#1d5ad5",
+        "opacity": 1.0,
+        "weight": 0.46,
+        "radius": 6
+      },
+      "classes": [],
+      "data": "data/l_lagos_lagos_dentroBacia_69f30b46_0eea_4d.geojson",
+      "featureCount": 79
+    },
+    {
+      "id": "l_limite_municipal_0d925856_9002_4f4e_900d",
+      "name": "Limite Municipal",
+      "type": "vector",
+      "visibleByDefault": true,
+      "legend": [
+        {
+          "label": "Limite Municipal",
+          "color": "#000000",
+          "strokeColor": "#141414",
+          "fillOpacity": 0.0,
+          "shape": "polygon"
+        }
+      ],
+      "legendKind": "single",
+      "bounds": [
+        [
+          -22.4412526519999,
+          -55.523704251
+        ],
+        [
+          -21.8793673169999,
+          -54.201337129
+        ]
+      ],
+      "order": 21,
+      "group": "Limites e Referência",
+      "geomType": "polygon",
+      "kind": "single",
+      "field": null,
+      "default": {
+        "fillColor": "#000000",
+        "fillOpacity": 0.0,
+        "color": "#141414",
+        "opacity": 1.0,
+        "weight": 0.8,
+        "radius": 6
+      },
+      "classes": [],
+      "data": "data/l_limite_municipal_0d925856_9002_4f4e_900d.geojson",
+      "featureCount": 1
+    },
+    {
+      "id": "l_loteamentos_23_07_2024_43cbba92_c2df_461",
+      "name": "loteamentos_23-07-2024",
+      "type": "vector",
+      "visibleByDefault": false,
+      "legend": [
+        {
+          "label": "loteamentos_23-07-2024",
+          "color": "#000000",
+          "strokeColor": "#000000",
+          "fillOpacity": 0.0,
+          "shape": "polygon"
+        }
+      ],
+      "legendKind": "single",
+      "bounds": [
+        [
+          -22.329488664663064,
+          -55.367706988133925
+        ],
+        [
+          -22.062838195454383,
+          -54.47728528520708
+        ]
+      ],
+      "order": 22,
+      "group": "Limites e Referência",
+      "geomType": "polygon",
+      "kind": "single",
+      "field": null,
+      "default": {
+        "fillColor": "#000000",
+        "fillOpacity": 0.0,
+        "color": "#000000",
+        "opacity": 1.0,
+        "weight": 0.16,
+        "radius": 6
+      },
+      "classes": [],
+      "data": "data/l_loteamentos_23_07_2024_43cbba92_c2df_461.geojson",
+      "featureCount": 435
+    },
+    {
+      "id": "l_lotes_fiscais_68f81179_239c_41df_be49_ef",
+      "name": "Mapa_GeoDourados — lotes_fiscais",
+      "type": "vector",
+      "visibleByDefault": false,
+      "legend": [
+        {
+          "label": "Mapa_GeoDourados — lotes_fiscais",
+          "color": "#e5b636",
+          "strokeColor": "#232323",
+          "fillOpacity": 1.0,
+          "shape": "polygon"
+        }
+      ],
+      "legendKind": "single",
+      "bounds": [
+        [
+          -22.405339633006378,
+          -55.367706987946164
+        ],
+        [
+          -22.061390390250995,
+          -54.38337219054008
+        ]
+      ],
+      "order": 23,
+      "group": "Limites e Referência",
+      "geomType": "polygon",
+      "kind": "single",
+      "field": null,
+      "default": {
+        "fillColor": "#e5b636",
+        "fillOpacity": 1.0,
+        "color": "#232323",
+        "opacity": 1.0,
+        "weight": 0.26,
+        "radius": 6
+      },
+      "classes": [],
+      "data": "data/l_lotes_fiscais_68f81179_239c_41df_be49_ef.geojson",
+      "featureCount": 120637
+    },
+    {
+      "id": "l_output_7a8986d8_349c_485e_8c75_555c6c8cb",
+      "name": "drenagem_MDE",
+      "type": "vector",
+      "visibleByDefault": false,
+      "legend": [
+        {
+          "label": "drenagem_MDE",
+          "color": "#000000",
+          "strokeColor": "#000000",
+          "fillOpacity": 1.0,
+          "shape": "line"
+        }
+      ],
+      "legendKind": "single",
+      "bounds": [
+        [
+          -22.45024120511566,
+          -55.51830981097732
+        ],
+        [
+          -21.864118635011558,
+          -54.19743456527464
+        ]
+      ],
+      "order": 24,
+      "group": "Geografia Física e Hidrografia",
+      "geomType": "line",
+      "kind": "single",
+      "field": null,
+      "default": {
+        "fillColor": "#1173c9",
+        "fillOpacity": 1.0,
+        "color": "#000000",
+        "opacity": 1.0,
+        "weight": 0.66,
+        "radius": 6
+      },
+      "classes": [],
+      "data": "data/l_output_7a8986d8_349c_485e_8c75_555c6c8cb.geojson",
+      "featureCount": 6774
+    },
+    {
+      "id": "l_perimetro_urbano_d80e3d58_6275_43db_a529",
+      "name": "perimetro-urbano",
+      "type": "vector",
+      "visibleByDefault": true,
+      "legend": [
+        {
+          "label": "perimetro-urbano",
+          "color": "#000000",
+          "strokeColor": "#505050",
+          "fillOpacity": 0.0,
+          "shape": "polygon"
+        }
+      ],
+      "legendKind": "single",
+      "bounds": [
+        [
+          -22.3057594001346,
+          -54.97661705848023
+        ],
+        [
+          -22.171916900405698,
+          -54.68255731560525
+        ]
+      ],
+      "order": 25,
+      "group": "Limites e Referência",
+      "geomType": "polygon",
+      "kind": "single",
+      "field": null,
+      "default": {
+        "fillColor": "#000000",
+        "fillOpacity": 0.0,
+        "color": "#505050",
+        "opacity": 1.0,
+        "weight": 0.5,
+        "radius": 6
+      },
+      "classes": [],
+      "data": "data/l_perimetro_urbano_d80e3d58_6275_43db_a529.geojson",
+      "featureCount": 1
+    },
+    {
+      "id": "l_qg_2022_670_fcu_agreg_76e7fbfb_fdc5_46ec",
+      "name": "Favelas e comunidades urbanas - FCU",
+      "type": "vector",
+      "visibleByDefault": true,
+      "legend": [
+        {
+          "label": "Favelas e comunidades urbanas - FCU",
+          "color": "#9b009b",
+          "strokeColor": "#5a005a",
+          "fillOpacity": 0.549,
+          "shape": "polygon"
+        }
+      ],
+      "legendKind": "single",
+      "bounds": [
+        [
+          -22.281956,
+          -54.8387375
+        ],
+        [
+          -22.2337862,
+          -54.7402172
+        ]
+      ],
+      "order": 26,
+      "group": "Vulnerabilidade Social (SoVI)",
+      "geomType": "polygon",
+      "kind": "single",
+      "field": null,
+      "default": {
+        "fillColor": "#9b009b",
+        "fillOpacity": 0.549,
+        "color": "#5a005a",
+        "opacity": 1.0,
+        "weight": 0.6,
+        "radius": 6
+      },
+      "classes": [],
+      "data": "data/l_qg_2022_670_fcu_agreg_76e7fbfb_fdc5_46ec.geojson",
+      "featureCount": 5
+    },
+    {
+      "id": "l_quadras_fiscais_fe6c6c14_a65f_47f7_b19c_",
+      "name": "Mapa_GeoDourados — quadras_fiscais",
+      "type": "vector",
+      "visibleByDefault": false,
+      "legend": [
+        {
+          "label": "Mapa_GeoDourados — quadras_fiscais",
+          "color": "#beb297",
+          "strokeColor": "#232323",
+          "fillOpacity": 1.0,
+          "shape": "polygon"
+        }
+      ],
+      "legendKind": "single",
+      "bounds": [
+        [
+          -22.329488664657653,
+          -55.367706987946164
+        ],
+        [
+          -22.062838195566822,
+          -54.47728528547012
+        ]
+      ],
+      "order": 27,
+      "group": "Limites e Referência",
+      "geomType": "polygon",
+      "kind": "single",
+      "field": null,
+      "default": {
+        "fillColor": "#beb297",
+        "fillOpacity": 1.0,
+        "color": "#232323",
+        "opacity": 1.0,
+        "weight": 0.26,
+        "radius": 6
+      },
+      "classes": [],
+      "data": "data/l_quadras_fiscais_fe6c6c14_a65f_47f7_b19c_.geojson",
+      "featureCount": 7969
+    },
+    {
+      "id": "l_sucetibilidade_enxurradas___suscetibilid",
+      "name": "sucetibilidade_enxurradas — suscetibilidade_a_enxurradas_intraurbanas",
+      "type": "vector",
+      "visibleByDefault": true,
+      "legend": [
+        {
+          "label": "1 - Baixa Tendência (< 15 m de desnível)",
+          "color": "#a9ffc0",
+          "strokeColor": "#232323",
+          "fillOpacity": 1.0,
+          "shape": "polygon"
+        },
+        {
+          "label": "2 - Média Tendência (15 a 25 m de desnível)",
+          "color": "#fd8d3c",
+          "strokeColor": "#232323",
+          "fillOpacity": 1.0,
+          "shape": "polygon"
+        },
+        {
+          "label": "3 - Alta Tendência (>= 25 m de desnível - Perfil Íngreme)",
+          "color": "#bd0026",
+          "strokeColor": "#232323",
+          "fillOpacity": 1.0,
+          "shape": "polygon"
+        }
+      ],
+      "legendKind": "categorized",
+      "bounds": [
+        [
+          -22.31694076881322,
+          -54.898152236417594
+        ],
+        [
+          -22.172303207427387,
+          -54.68227412406352
+        ]
+      ],
+      "order": 28,
+      "group": "Suscetibilidade e Risco Físico",
+      "geomType": "polygon",
+      "kind": "categorized",
+      "field": "classe_rotulo",
+      "default": null,
+      "classes": [
+        {
+          "value": "1 - Baixa Tendência (< 15 m de desnível)",
+          "label": "1 - Baixa Tendência (< 15 m de desnível)",
+          "style": {
+            "fillColor": "#a9ffc0",
+            "fillOpacity": 1.0,
+            "color": "#232323",
+            "opacity": 1.0,
+            "weight": 0.26,
+            "radius": 6
+          }
+        },
+        {
+          "value": "2 - Média Tendência (15 a 25 m de desnível)",
+          "label": "2 - Média Tendência (15 a 25 m de desnível)",
+          "style": {
+            "fillColor": "#fd8d3c",
+            "fillOpacity": 1.0,
+            "color": "#232323",
+            "opacity": 1.0,
+            "weight": 0.26,
+            "radius": 6
+          }
+        },
+        {
+          "value": "3 - Alta Tendência (>= 25 m de desnível - Perfil Íngreme)",
+          "label": "3 - Alta Tendência (>= 25 m de desnível - Perfil Íngreme)",
+          "style": {
+            "fillColor": "#bd0026",
+            "fillOpacity": 1.0,
+            "color": "#232323",
+            "opacity": 1.0,
+            "weight": 0.26,
+            "radius": 6
+          }
+        }
+      ],
+      "data": "data/l_sucetibilidade_enxurradas___suscetibilid.geojson",
+      "featureCount": 5879
+    }
+  ]
+}
